@@ -9,5 +9,5 @@ class Solution(object):
             if dic.get(nums[i]) != None:
                 return True
             else:
-                dic[nums[i]] = 1;
+                dic[nums[i]] = 1
         return False

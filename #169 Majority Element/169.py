@@ -7,9 +7,9 @@ class Solution(object):
         dic = {}
         for i in range(len(nums)):
             if dic.get(nums[i]) != None:
-                dic[nums[i]] += 1;
+                dic[nums[i]] += 1
             else:
-                dic[nums[i]] = 1;
+                dic[nums[i]] = 1
         ct = 0
         ans = 0
         for key in dic:
