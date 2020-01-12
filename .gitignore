@@ -1,2 +1,3 @@
 *.ipynb
 rename.py
+.vscode/settings.json
