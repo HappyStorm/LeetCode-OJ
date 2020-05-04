@@ -16,5 +16,4 @@ class Solution:
         return _sum
 
     def bitwiseComplement(self, N: int) -> int:
-        print([0 if b else 1 for b in self.getbin(N)])
         return self.bin2int([0 if b else 1 for b in self.getbin(N)]) if N else 1
