@@ -5,7 +5,7 @@ class Solution:
             if c == char:
                 ct += 1
             else:
-                ct, char = 1, c
                 ans = max(ans, ct)
+                ct, char = 1, c
 
         return max(ans, ct)
