@@ -3,20 +3,13 @@ class Solution:
         n, queue = len(arr), [start]
         while queue:
             cur = queue.pop()
-
-            if arr[cur] == -1:
-                continue
-
             if arr[cur] == 0:
                 return True
 
-            lid, rid = cur - arr[cur], cur + arr[cur]
-            if lid >= 0:
-                queue = [lid] + queue
+            for i in [cur - arr[cur], cur + arr[cur]]:
+                if 0 <= i < n and arr[i] >= 0:
+                    queue = [i] + queue
 
-            if rid < n:
-                queue = [rid] + queue
-
-            arr[cur] = -1
+            arr[cur] = -arr[cur]
 
         return False
