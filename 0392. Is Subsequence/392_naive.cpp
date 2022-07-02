@@ -12,6 +12,6 @@ public:
                 ct_t++;
             }
         }
-        return true ? ct_s == len_s : false;
+        return ct_s == len_s ? true : false;
     }
 };
